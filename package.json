@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
-    "ticaret_api"
+    "ticaret_api",
+    "heroku"
   ],
   "author": "",
   "license": "ISC",
@@ -22,7 +19,7 @@
     "passport-local": "^1.0.0",
     "path": "^0.12.7"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.7"
+  "engines": {
+    "node": "14.x",
   }
 }
