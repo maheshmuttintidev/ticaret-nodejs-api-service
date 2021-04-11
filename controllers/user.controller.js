@@ -21,7 +21,7 @@ exports.registerUser = (req, res) => {
                     subject: doc._id
                 }
                 var token = jwt.sign(payload, '7&2dsq3sss88we#12jjs823Sewr234')
-                res.status(200).send({token: token})
+                res.status(200).send({userId: doc._id,token: token, name: doc.fullName})
             }
         })
     })
