@@ -44,8 +44,17 @@ exports.loginUser = (req, res) => {
                             subject: doc._id
                         }
 
-                        const token = jwt.sign(payload, '7&2dsq3sss88we#12jjs823Sewr234')
-
+                        const token = jwt.sign(
+                            payload,
+                            '7&2dsq3sss88we#12jjs823Sewr234',
+                            {
+                                expiresIn: '1h'
+                            })
+                        res.cookie('token', token, {
+                            expires: new Date(Date.now() + 604800000000),
+                            secure: true,
+                            httpOnly: true,
+                        })
                         res.status(200).send({userId: doc._id,token: token, name: doc.fullName})
                     } else {
                         res.send({

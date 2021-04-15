@@ -9,4 +9,6 @@ userRouter.post('/register', userController.registerUser)
 // http://localhost:5000/user/login
 userRouter.post('/login', userController.loginUser)
 
+
+
 module.exports = userRouter
