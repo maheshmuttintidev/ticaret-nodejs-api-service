@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const MONGO_URI = 'mongodb+srv://mahesh1234:Tanuja@143@cluster0.54pav.mongodb.net/UsersRegistersDB?retryWrites=true&w=majority'
+const MONGO_URI = 'mongodb+srv://mahesh1234:Tanuja@143@cluster0.54pav.mongodb.net/ticaretUsers?retryWrites=true&w=majority'
 // const MONGO_URI = 'mongodb://localhost/newusers'
 
 exports.connectDB = () => {
