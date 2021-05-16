@@ -6,7 +6,7 @@ DB.connectDB()
 
 // middlewares
 app.use(express.json())
-app.use(express.urlencoded({ extended: true}))
+app.use(express.urlencoded({ extended: true }))
 app.use(require("cookie-parser")())
 app.use(require("cors")())
 
@@ -36,7 +36,5 @@ app.get('/', (req, res) => {
 
 app.use('/user', userRouters)
 
-
-const port = process.env.PORT || 5050;
-
-app.listen(port, () => console.log(`Server running on port ${port} 🔥`));
+const port = process.env.PORT || 5000
+app.listen(port, () => console.log(`Server running on port ${port} 🔥`))
