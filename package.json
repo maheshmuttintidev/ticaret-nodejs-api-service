@@ -21,7 +21,9 @@
     "mongoose": "^5.11.19",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "plivo": "^4.17.1",
+    "two-step-auth": "^1.1.2"
   },
   "engines": {
     "node": "14.x"

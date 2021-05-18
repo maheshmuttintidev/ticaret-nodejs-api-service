@@ -1,6 +1,7 @@
 const UserModel = require('../models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
+const {Auth, LoginCredentials} = require('two-step-auth')
 
 exports.registerUser = (req, res) => {
     const userData = req.body
@@ -16,25 +17,11 @@ exports.registerUser = (req, res) => {
             if (err) {
                 res.send(err)
             } else {
-                // UserModel.findOne({mobileNumber: userData.mobileNumber}, (err, doc) => {
-                //     if(err) {
-                //         console.log(err)
-                //     } else {
-                //         if(doc) {
-                //             if(userData.mobileNumber === doc.mobileNumber) {
-                //                 res.send({
-                //                     message: "Mobile Number already exists"
-                //                 })
-                //             } else {
                 var payload = {
                     subject: doc._id
                 }
                 var token = jwt.sign(payload, '7&2dsq3sss88we#12jjs823Sewr234')
                 res.status(200).send({ userId: doc._id, token: token, name: doc.fullName })
-                //             }
-                //         }
-                //     }
-                // })
             }
         })
     })
@@ -71,16 +58,49 @@ exports.loginUser = (req, res) => {
                         res.status(200).send({ userId: doc._id, token: token, name: doc.fullName })
                     } else {
                         res.send({
-                            message: "Password is incorrect"
+                            message: "Password is incorrect!"
                         })
                     }
                 })
             } else {
                 res.send({
-                    message: "phone number is not registered"
+                    message: "Mobile Number is not registered!"
                 })
             }
         }
     })
 }
 
+
+
+exports.forgotPassword = (req, res) => {
+    const userData = req.body
+
+    UserModel.findOne({mobileNumber: userData.mobileNumber}, (err, doc) => {
+        if(doc) {
+            doc.updateOne({password: userData.password}, (err, doc) => {
+                if(doc) {
+                    console.log(doc.nModified)
+                    if(doc.nModified === 1) {
+                        res.send({
+                            message: "password changed!"
+                        })
+                    } else {
+                        res.send({
+                            mobile: "password already in use..."
+                        })
+                    }
+                }
+                else {
+                    res.send({
+                        message: "something went wrong!"
+                    })
+                }
+            })
+        } else {
+            res.send({
+                message: "Mobile Number is not registered!"
+            })
+        }
+    })
+}

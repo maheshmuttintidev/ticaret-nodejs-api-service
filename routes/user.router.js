@@ -6,5 +6,6 @@ const userController = require('../controllers/user.controller')
 userRouter.post('/register', userController.registerUser)
 // http://localhost:5000/user/login
 userRouter.post('/login', userController.loginUser)
-
+// http://localhost:5000/user/forgot-password
+userRouter.post('/forgot-password', userController.forgotPassword)
 module.exports = userRouter
