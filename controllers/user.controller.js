@@ -22,6 +22,11 @@ exports.registerUser = (req, res) => {
                 }
                 var token = jwt.sign(payload, '7&2dsq3sss88we#12jjs823Sewr234')
                 res.status(200).send({ userId: doc._id, token: token, name: doc.fullName })
+                res.cookie('token', token, {
+                    expires: new Date(Date.now() + 604800000000),
+                    secure: true,
+                    httpOnly: true,
+                })
             }
         })
     })
@@ -78,8 +83,9 @@ exports.forgotPassword = (req, res) => {
 
     UserModel.findOne({mobileNumber: userData.mobileNumber}, (err, doc) => {
         if(doc) {
-            doc.updateOne({password: userData.password}, (err, doc) => {
-                if(doc) {
+            bcrypt.hash(userData.password, 10).then(hashedPassword => {
+                doc.updateOne({password: hashedPassword}, (err, doc) => {
+                    console.log(userData.password,hashedPassword)
                     console.log(doc.nModified)
                     if(doc.nModified === 1) {
                         res.send({
@@ -90,16 +96,12 @@ exports.forgotPassword = (req, res) => {
                             mobile: "password already in use..."
                         })
                     }
-                }
-                else {
-                    res.send({
-                        message: "something went wrong!"
-                    })
-                }
+                })
             })
-        } else {
+        }
+        else {
             res.send({
-                message: "Mobile Number is not registered!"
+                message: "Mobile number is not registered!"
             })
         }
     })
