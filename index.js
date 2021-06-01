@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
-const userRouters = require('./routes/user.router')
+const userRouter = require('./routes/user.router')
 const moviesRouter = require('./routes/movies.router')
 const DB = require('./db/db.config')
 DB.connectDB()
+
 
 // middlewares
 app.use(express.json())
@@ -29,7 +30,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/', moviesRouter)
-app.use('/user', userRouters)
+app.use('/user', userRouter)
 
 const port = process.env.PORT || 8080
 app.listen(port, () => console.log(`Server running on port ${port} 🔥`))

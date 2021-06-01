@@ -1,7 +1,7 @@
 const UserModel = require('../models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
-const {Auth, LoginCredentials} = require('two-step-auth')
+const { Auth, LoginCredentials } = require('two-step-auth')
 
 exports.registerUser = (req, res) => {
     const userData = req.body
@@ -81,19 +81,19 @@ exports.loginUser = (req, res) => {
 exports.forgotPassword = (req, res) => {
     const userData = req.body
 
-    UserModel.findOne({mobileNumber: userData.mobileNumber}, (err, doc) => {
-        if(doc) {
+    UserModel.findOne({ mobileNumber: userData.mobileNumber }, (err, doc) => {
+        if (doc) {
             bcrypt.hash(userData.password, 10).then(hashedPassword => {
-                doc.updateOne({password: hashedPassword}, (err, doc) => {
-                    console.log(userData.password,hashedPassword)
+                doc.updateOne({ password: hashedPassword }, (err, doc) => {
+                    console.log(userData.password, hashedPassword)
                     console.log(doc.nModified)
-                    if(doc.nModified === 1) {
+                    if (doc.nModified === 1) {
                         res.send({
                             message: "password changed!"
                         })
                     } else {
                         res.send({
-                            mobile: "password already in use..."
+                            message: "password already in use..."
                         })
                     }
                 })

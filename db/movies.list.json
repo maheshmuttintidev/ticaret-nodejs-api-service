@@ -1,39 +1,312 @@
 {
   "movies": [
     {
-      "id": 0,
-      "name": "VAKEEL SAB",
-      "img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg"
-    },
-    {
       "id": 1,
-      "name": "CHAKRA",
-      "img_url": "https://d1ydle56j7f53e.cloudfront.net/assets/gallery/movie/chakra-13939/misc-big/chakra-2.jpg"
+      "name": "VAKEEL SAB",
+      "img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg",
+      "landscape_img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg",
+      "movie_type": "Action Thriller & Emotional",
+      "duration": "2h 5m",
+      "availability": "UA",
+      "star_rating": "3.7",
+      "languages": "Telugu, Tamil",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
     },
     {
       "id": 2,
-      "name": "NANDHI",
-      "img_url": "https://content.tupaki.com/twdata/2020/0620/photos/movies/Allari%20Naresh%20Nandi%20Character%20Introduction%20posters/normal/Allari%20Naresh%20Nandi%20Character%20Introduction%20posters_2.jpg"
+      "name": "CHAKRA",
+      "img_url": "https://d1ydle56j7f53e.cloudfront.net/assets/gallery/movie/chakra-13939/misc-big/chakra-2.jpg",
+      "landscape_img_url": "https://d1ydle56j7f53e.cloudfront.net/assets/gallery/movie/chakra-13939/misc-big/chakra-2.jpg",
+      "movie_type": "Action Thriller",
+      "duration": "2h 10m",
+      "availability": "UA",
+      "star_rating": "3.5",
+      "languages": "Telugu, Tamil",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
     },
     {
       "id": 3,
-      "name": "ZOMBIE REDDY",
-      "img_url": "https://www.seelatest.com/images/poster/zombie-reddy.jpg"
+      "name": "NANDHI",
+      "img_url": "https://content.tupaki.com/twdata/2020/0620/photos/movies/Allari%20Naresh%20Nandi%20Character%20Introduction%20posters/normal/Allari%20Naresh%20Nandi%20Character%20Introduction%20posters_2.jpg",
+      "landscape_img_url": "https://content.tupaki.com/twdata/2020/0620/photos/movies/Allari%20Naresh%20Nandi%20Character%20Introduction%20posters/normal/Allari%20Naresh%20Nandi%20Character%20Introduction%20posters_2.jpg",
+      "movie_type": "Action Thriller & Emotional",
+      "duration": "1h 55m",
+      "availability": "UA",
+      "star_rating": "3.2",
+      "languages": "Telugu",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
     },
     {
       "id": 4,
-      "name": "TOM AND JERRY",
-      "img_url": "https://animatedviews.com/wp-content/uploads/2020/12/t-and-j-1.jpg"
+      "name": "ZOMBIE REDDY",
+      "img_url": "https://www.seelatest.com/images/poster/zombie-reddy.jpg",
+      "landscape_img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg",
+      "movie_type": "Action Thriller",
+      "duration": "2h 02m",
+      "availability": "UA",
+      "star_rating": "3.4",
+      "languages": "Telugu",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
     },
     {
       "id": 5,
-      "name": "KAPATADHARI",
-      "img_url": "https://cdn.gulte.com/wp-content/uploads/2020/08/Sumanth.jpg"
+      "name": "TOM AND JERRY",
+      "img_url": "https://animatedviews.com/wp-content/uploads/2020/12/t-and-j-1.jpg",
+      "landscape_img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg",
+      "movie_type": "Action Thriller & Comedy",
+      "duration": "1h 40m",
+      "availability": "UA",
+      "star_rating": "3.1",
+      "languages": "Telugu, Tamil, Hindi, English",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
     },
     {
       "id": 6,
+      "name": "KAPATADHARI",
+      "img_url": "https://cdn.gulte.com/wp-content/uploads/2020/08/Sumanth.jpg",
+      "landscape_img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg",
+      "movie_type": "Action Thriller",
+      "duration": "2h 03m",
+      "availability": "UA",
+      "star_rating": "3.0",
+      "languages": "Telugu",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
+    },
+    {
+      "id": 7,
       "name": "UPPENA",
-      "img_url": "https://www.idreampost.com/uploads/gallery_uploads/2020/01/posts_8S2OwcCWzztqn92Q_1600668653.jpg"
+      "img_url": "https://www.idreampost.com/uploads/gallery_uploads/2020/01/posts_8S2OwcCWzztqn92Q_1600668653.jpg",
+      "landscape_img_url": "https://cdn.celpox.com/bby_uploads/media/e3ed62d11b81cc88d7567695d022665e.jpg",
+      "movie_type": "Action Thriller, Emotional & Romantic",
+      "duration": "2h 07m",
+      "availability": "UA",
+      "star_rating": "3.5",
+      "languages": "Telugu, Tamil, Malayalam",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsa consectetur expedita rem reiciendis ducimus quis porro magnam ab ut.",
+      "theater_list": [
+        {
+          "theater_name": "AMB Cinema - Gachibowli",
+          "theater_address": "Gachibowli - Miyapur Rd, Whitefields, Kohtaguda, Telangana 500084",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Panjagutta - Hyderabad",
+          "theater_address": "Central Mall, 5Th Floor, Panjagutta Cross Road",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "INOX Maheshwari Parmeshwari Mall - Kachiguda",
+          "theater_address": "5th Floor, Maheshwari Parmeshwari, Kachiguda Cross Roads",
+          "timings": ["01:00 PM", "06:00 PM", "11:00 PM"]
+        },
+        {
+          "theater_name": "PVR Irrum Manzil - Khairatabad",
+          "theater_address": "Level 5, Shop No.01, Hyderabad Next Galleria@Irrum Manzil",
+          "timings": ["01:00 PM", "04:00 PM", "06:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR Musarambagh - New Malakpet",
+          "theater_address": "Ts No 2,5 and 6, Ward No. 170",
+          "timings": ["01:00 PM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        },
+        {
+          "theater_name": "PVR RK Cineplex - Banjara Hills",
+          "theater_address": "RK Complex, Road No.2, Opp: L.V.Prasad Eye Institute",
+          "timings": ["11:00 AM", "05:00 PM", "07:00 PM", "10:00 PM"]
+        }
+      ]
     }
   ]
 }
