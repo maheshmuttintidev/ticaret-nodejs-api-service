@@ -15,7 +15,9 @@ exports.registerUser = (req, res) => {
 
         doc.save((err, doc) => {
             if (err) {
-                res.send(err)
+                res.send({
+                    message: "Mobile Number already registered!!"
+                })
             } else {
                 var payload = {
                     subject: doc._id
