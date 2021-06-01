@@ -10,10 +10,7 @@ DB.connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(require("cookie-parser")())
-app.use(require("cors")({
-    origin: "http://localhost:3000",
-    credentials: true
-}))
+app.use(require("cors")())
 
 
 
