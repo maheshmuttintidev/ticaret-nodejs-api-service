@@ -10,17 +10,11 @@ DB.connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(require("cookie-parser")())
-app.use(require("cors")())
+app.use(require("cors")({
+    origin: "http://localhost:3000",
+    credentials: true
+}))
 
-app.use(function (req, res, next) {
-    res.header('Content-Type', 'application/json;charset=UTF-8')
-    res.header('Access-Control-Allow-Credentials', true)
-    res.header(
-        'Access-Control-Allow-Headers',
-        'Origin, X-Requested-With, Content-Type, Accept'
-    )
-    next()
-})
 
 
 app.get('/', (req, res) => {

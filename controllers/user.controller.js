@@ -20,15 +20,16 @@ exports.registerUser = (req, res) => {
                 })
             } else {
                 var payload = {
-                    subject: doc._id
+                    subject: [doc._id, doc.mobileNumber]
                 }
+                console.log(payload)
                 var token = jwt.sign(payload, '7&2dsq3sss88we#12jjs823Sewr234')
-                res.status(200).send({ userId: doc._id, token: token, name: doc.fullName })
                 res.cookie('token', token, {
                     expires: new Date(Date.now() + 604800000000),
                     secure: true,
                     httpOnly: true,
                 })
+                res.status(200).send({ userId: doc._id, token: token, name: doc.fullName })
             }
         })
     })
@@ -44,12 +45,13 @@ exports.loginUser = (req, res) => {
             console.log(err)
         } else {
             if (doc) {
-                console.log("check result", bcrypt.compare(userData.password, doc.password))
                 bcrypt.compare(userData.password, doc.password).then(result => {
                     if (result) {
                         const payload = {
-                            subject: doc._id
+                            subject: [doc._id, doc.mobileNumber]
                         }
+
+                        console.log(payload)
 
                         const token = jwt.sign(
                             payload,
@@ -62,6 +64,7 @@ exports.loginUser = (req, res) => {
                             secure: true,
                             httpOnly: true,
                         })
+
                         res.status(200).send({ userId: doc._id, token: token, name: doc.fullName })
                     } else {
                         res.send({
