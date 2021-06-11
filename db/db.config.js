@@ -9,3 +9,4 @@ exports.connectDB = () => {
         useNewUrlParser: true
     }, err => err ? console.log("error", err) : console.log("connected to MongoDB"))
 }
+

@@ -1,7 +1,7 @@
 const UserModel = require('../models/user.model')
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
-const { Auth, LoginCredentials } = require('two-step-auth')
+// const { Auth, LoginCredentials } = require('two-step-auth')
 
 exports.registerUser = (req, res) => {
     const userData = req.body

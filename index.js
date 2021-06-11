@@ -1,4 +1,5 @@
 const express = require('express')
+const helmet = require("helmet")
 const app = express()
 const userRouter = require('./routes/user.router')
 const moviesRouter = require('./routes/movies.router')
@@ -11,6 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(require("cookie-parser")())
 app.use(require("cors")())
+app.use(helmet())
 
 
 
