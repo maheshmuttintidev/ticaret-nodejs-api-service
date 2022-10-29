@@ -55,7 +55,7 @@ exports.loginUser = (req, res) => {
 
             console.log(payload);
 
-            const token = jwt.sign(payload, "7&2dsq3sss88we#12jjs823Sewr234", {
+            const token = jwt.sign(payload, process.env.USER_SECRET_KEY, {
               expiresIn: "1h",
             });
             res.cookie("token", token, {
