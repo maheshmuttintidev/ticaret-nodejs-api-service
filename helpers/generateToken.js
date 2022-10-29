@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken")
 const generateToken = (res, id, mobileNumber) => {
     const expiration = process.env.DB_ENV === "testing" ? 100 : 604800000
     const token = jwt.sign(
-        { id, mobileNumber }, 'tanuja@143', {
+        { id, mobileNumber }, process.env.JWT_SIGN_KEY, {
         expiresIn: process.env.DB_ENV === "testing" ? "1d" : "7d",
     }
     )
