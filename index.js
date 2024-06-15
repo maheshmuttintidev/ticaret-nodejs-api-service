@@ -1,6 +1,6 @@
 require("dotenv").config();
 const express = require("express");
-const RateLimit = require("express-rate-limit");
+const rateLimit = require("express-rate-limit");
 const helmet = require("helmet");
 const app = express();
 const userRouter = require("./routes/user.router");
@@ -9,7 +9,7 @@ const DB = require("./db/db.config");
 DB.connectDB();
 
 // set up rate limiter: maximum of five requests per minute
-const limiter = new RateLimit({
+const limiter = rateLimit({
   windowMs: 1 * 60 * 1000, // 1 minute
   max: 20, // limit each IP to 10 requests per windowMs
 });
